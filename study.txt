@@ -2,7 +2,8 @@ package kata
 
 func ValidParentheses(parens string) bool {
   count := 0
-  
+
+  //string iteration의 경우 반드시 key, value를 다 명시해서 하도록.
   for _, element := range parens{
     if string(element) == "("{
       count++
